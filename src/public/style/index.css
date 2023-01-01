@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: azure;
+}
+
+.title {
+  font-size: 2.4rem;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 12ch;
+  animation: typing 2s steps(12),
+    blink .5s infinite step-end alternate;
+  overflow: hidden;
+  color: #000;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: none;
+  outline: 2px solid #000;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#inputQr {
+  border: .7px solid #000;
+  padding: 10px;
+  width: 23rem;
+  font-size: 1rem;
+  font-weight: 300;
+  border-radius: 5px;
+}
+
+#inputQr:focus {
+  outline: 1px solid #000;
+}
+
+#containerQR {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  color: #000;
+}
+
+footer a {
+  text-decoration: none;
+  color: aqua;
+}
+
+@media (max-width: 320px) {
+  body {
+    max-width: 80vw;
+    gap: 1rem;
+  }
+
+  .container {
+    gap: 1.1rem;
+  }
+
+  .title {
+    font-size: 2.1rem;
+  }
+
+  #inputQr {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    max-width: 80vw;
+    gap: 1rem;
+  }
+
+  .container {
+    gap: 1.1rem;
+  }
+
+  .title {
+    font-size: 2.1rem;
+  }
+
+  #inputQr {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 80vw;
+    gap: 1rem;
+  }
+
+  .container {
+    gap: 1.1rem;
+  }
+
+  .title {
+    font-size: 2.1rem;
+  }
+
+  #inputQr {
+    max-width: 90vw;
+  }
+}
